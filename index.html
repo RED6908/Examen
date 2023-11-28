@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertir</title>
+</head>
+<body>
+
+<h2>Convertir</h2>
+
+<form id="converterForm">
+    <label for="amount">Cantidad:</label>
+    <input type="number" id="amount" step="0.01" required>
+    
+    <select id="fromCurrency" required>
+        <option value="euro">Euro</option>
+        <option value="dollar">Dollar</option>
+    </select>
+    
+    <label for="toCurrency">A:</label>
+    <select id="toCurrency" required>
+        <option value="euro">Euro</option>
+        <option value="dollar">Dollar</option>
+    </select>
+    
+    <button type="button" onclick="convertCurrency()">Convertir</button>
+</form>
+
+<p id="result"></p>
+
+<script src="JS/script.js"></script>
+
+</body>
+</html>
